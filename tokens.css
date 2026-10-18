@@ -1,0 +1,49 @@
+/* tokens · gridlit.codehappens.dev · colours taken from the game's default theme (lib/logic/themes.dart)
+ * axes: paper dark navy / display-heavy wide / accent cyan + block colours
+ */
+:root {
+  color-scheme: dark;
+  --color-paper:   oklch(19% 0.06 272);   /* #0E1330 */
+  --color-paper-2: oklch(22% 0.09 285);   /* #1B1446 */
+  --color-board:   oklch(25% 0.08 272);   /* #182049 */
+  --color-cell:    oklch(31% 0.09 272);   /* #222C5C */
+  --color-rule:    oklch(34% 0.07 272);
+  --color-grid:    oklch(30% 0.06 272 / 0.35);
+  --color-ink:     oklch(97% 0.01 272);
+  --color-muted:   oklch(80% 0.03 272);
+  --color-cyan:    oklch(83% 0.12 205);   /* accent #4DD9E8 */
+  --color-cyan-hi: oklch(91% 0.08 205);
+
+  --block-0: oklch(66% 0.19 22);   /* #FF5A5F */
+  --block-1: oklch(77% 0.16 60);   /* #FF9F43 */
+  --block-2: oklch(89% 0.17 98);   /* #FFD93D */
+  --block-3: oklch(75% 0.14 145);  /* #6BCB77 */
+  --block-4: oklch(83% 0.12 205);  /* #4DD9E8 */
+  --block-5: oklch(64% 0.18 262);  /* #4D8BFF */
+  --block-6: oklch(63% 0.19 293);  /* #9B6BFF */
+  --block-7: oklch(67% 0.21 350);  /* #F15BB5 */
+
+  --font-display: "Unbounded", "Arial Black", "Segoe UI Black", sans-serif;
+  --font-body:    "Figtree", ui-sans-serif, "Segoe UI", Roboto, sans-serif;
+
+  --text-sm:      0.875rem;
+  --text-base:    1.0625rem;
+  --text-md:      1.25rem;
+  --text-lg:      clamp(1.5rem, 2.2vw + 1rem, 2.25rem);
+  --text-display: clamp(2.5rem, 12vw, 5rem);
+
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6.5rem;
+
+  --page-gutter: clamp(1rem, 4vw, 2.5rem);
+  --page-max:    68rem;
+  --read-max:    44rem;
+
+  --radius-shot: 1.1rem;
+  --loop:        6s;
+}

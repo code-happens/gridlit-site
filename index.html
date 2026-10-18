@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
+<title>Gridlit: Block Puzzle</title>
+<meta name="description" content="Gridlit is a block puzzle for Android: drag blocks onto an 8×8 board, fill rows and columns, chain combos. No timer.">
+<link rel="canonical" href="https://gridlit.codehappens.dev/">
+<link rel="icon" href="img/icon-512.png" type="image/png">
+<link rel="preload" href="fonts/Unbounded-800-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header class="wrap top">
+  <a href="https://codehappens.dev/games/">Code Happens</a>
+  <a href="privacy-policy.html">Privacy policy</a>
+</header>
+
+<main>
+  <section class="wrap hero">
+    <svg class="scene" viewBox="0 0 504 504" aria-hidden="true">
+      <rect class="board" x="0" y="0" width="504" height="504" rx="22"/>
+      <rect class="cell" x="12" y="12" width="54" height="54" rx="9"/>
+      <rect class="cell" x="72" y="12" width="54" height="54" rx="9"/>
+      <rect class="cell" x="132" y="12" width="54" height="54" rx="9"/>
+      <rect class="cell" x="192" y="12" width="54" height="54" rx="9"/>
+      <rect class="cell" x="252" y="12" width="54" height="54" rx="9"/>
+      <rect class="cell" x="312" y="12" width="54" height="54" rx="9"/>
+      <rect class="cell" x="372" y="12" width="54" height="54" rx="9"/>
+      <rect class="cell" x="432" y="12" width="54" height="54" rx="9"/>
+      <rect class="cell" x="12" y="72" width="54" height="54" rx="9"/>
+      <rect class="cell" x="72" y="72" width="54" height="54" rx="9"/>
+      <rect class="cell" x="132" y="72" width="54" height="54" rx="9"/>
+      <rect class="cell" x="192" y="72" width="54" height="54" rx="9"/>
+      <rect class="cell" x="252" y="72" width="54" height="54" rx="9"/>
+      <rect class="cell" x="312" y="72" width="54" height="54" rx="9"/>
+      <rect class="cell" x="372" y="72" width="54" height="54" rx="9"/>
+      <rect class="cell" x="432" y="72" width="54" height="54" rx="9"/>
+      <rect class="cell" x="12" y="132" width="54" height="54" rx="9"/>
+      <rect class="cell" x="72" y="132" width="54" height="54" rx="9"/>
+      <rect class="cell" x="132" y="132" width="54" height="54" rx="9"/>
+      <rect class="cell" x="192" y="132" width="54" height="54" rx="9"/>
+      <rect class="cell" x="252" y="132" width="54" height="54" rx="9"/>
+      <rect class="cell" x="312" y="132" width="54" height="54" rx="9"/>
+      <rect class="cell" x="372" y="132" width="54" height="54" rx="9"/>
+      <rect class="cell" x="432" y="132" width="54" height="54" rx="9"/>
+      <rect class="cell" x="12" y="192" width="54" height="54" rx="9"/>
+      <rect class="cell" x="72" y="192" width="54" height="54" rx="9"/>
+      <rect class="cell" x="132" y="192" width="54" height="54" rx="9"/>
+      <rect class="cell" x="192" y="192" width="54" height="54" rx="9"/>
+      <rect class="cell" x="252" y="192" width="54" height="54" rx="9"/>
+      <rect class="cell" x="312" y="192" width="54" height="54" rx="9"/>
+      <rect class="cell" x="372" y="192" width="54" height="54" rx="9"/>
+      <rect class="cell" x="432" y="192" width="54" height="54" rx="9"/>
+      <rect class="cell" x="12" y="252" width="54" height="54" rx="9"/>
+      <rect class="cell" x="72" y="252" width="54" height="54" rx="9"/>
+      <rect class="cell" x="132" y="252" width="54" height="54" rx="9"/>
+      <rect class="cell" x="192" y="252" width="54" height="54" rx="9"/>
+      <rect class="cell" x="252" y="252" width="54" height="54" rx="9"/>
+      <rect class="cell" x="312" y="252" width="54" height="54" rx="9"/>
+      <rect class="cell" x="372" y="252" width="54" height="54" rx="9"/>
+      <rect class="cell" x="432" y="252" width="54" height="54" rx="9"/>
+      <rect class="cell" x="12" y="312" width="54" height="54" rx="9"/>
+      <rect class="cell" x="72" y="312" width="54" height="54" rx="9"/>
+      <rect class="cell" x="132" y="312" width="54" height="54" rx="9"/>
+      <rect class="cell" x="192" y="312" width="54" height="54" rx="9"/>
+      <rect class="cell" x="252" y="312" width="54" height="54" rx="9"/>
+      <rect class="cell" x="312" y="312" width="54" height="54" rx="9"/>
+      <rect class="cell" x="372" y="312" width="54" height="54" rx="9"/>
+      <rect class="cell" x="432" y="312" width="54" height="54" rx="9"/>
+      <rect class="cell" x="12" y="372" width="54" height="54" rx="9"/>
+      <rect class="cell" x="72" y="372" width="54" height="54" rx="9"/>
+      <rect class="cell" x="132" y="372" width="54" height="54" rx="9"/>
+      <rect class="cell" x="192" y="372" width="54" height="54" rx="9"/>
+      <rect class="cell" x="252" y="372" width="54" height="54" rx="9"/>
+      <rect class="cell" x="312" y="372" width="54" height="54" rx="9"/>
+      <rect class="cell" x="372" y="372" width="54" height="54" rx="9"/>
+      <rect class="cell" x="432" y="372" width="54" height="54" rx="9"/>
+      <rect class="cell" x="12" y="432" width="54" height="54" rx="9"/>
+      <rect class="cell" x="72" y="432" width="54" height="54" rx="9"/>
+      <rect class="cell" x="132" y="432" width="54" height="54" rx="9"/>
+      <rect class="cell" x="192" y="432" width="54" height="54" rx="9"/>
+      <rect class="cell" x="252" y="432" width="54" height="54" rx="9"/>
+      <rect class="cell" x="312" y="432" width="54" height="54" rx="9"/>
+      <rect class="cell" x="372" y="432" width="54" height="54" rx="9"/>
+      <rect class="cell" x="432" y="432" width="54" height="54" rx="9"/>
+      <g class="blk c5"><rect x="372" y="72" width="54" height="54" rx="9"/><rect class="gloss" x="379" y="78" width="40" height="8" rx="4"/></g>
+      <g class="blk c1"><rect x="12" y="132" width="54" height="54" rx="9"/><rect class="gloss" x="19" y="138" width="40" height="8" rx="4"/></g>
+      <g class="blk c5"><rect x="372" y="132" width="54" height="54" rx="9"/><rect class="gloss" x="379" y="138" width="40" height="8" rx="4"/></g>
+      <g class="blk c5"><rect x="432" y="132" width="54" height="54" rx="9"/><rect class="gloss" x="439" y="138" width="40" height="8" rx="4"/></g>
+      <g class="blk c1"><rect x="12" y="192" width="54" height="54" rx="9"/><rect class="gloss" x="19" y="198" width="40" height="8" rx="4"/></g>
+      <g class="blk c1"><rect x="72" y="192" width="54" height="54" rx="9"/><rect class="gloss" x="79" y="198" width="40" height="8" rx="4"/></g>
+      <g class="blk c2"><rect x="252" y="192" width="54" height="54" rx="9"/><rect class="gloss" x="259" y="198" width="40" height="8" rx="4"/></g>
+      <g class="blk c6"><rect x="372" y="192" width="54" height="54" rx="9"/><rect class="gloss" x="379" y="198" width="40" height="8" rx="4"/></g>
+      <g class="blk c3"><rect x="12" y="252" width="54" height="54" rx="9"/><rect class="gloss" x="19" y="258" width="40" height="8" rx="4"/></g>
+      <g class="blk c1"><rect x="72" y="252" width="54" height="54" rx="9"/><rect class="gloss" x="79" y="258" width="40" height="8" rx="4"/></g>
+      <g class="blk c2"><rect x="192" y="252" width="54" height="54" rx="9"/><rect class="gloss" x="199" y="258" width="40" height="8" rx="4"/></g>
+      <g class="blk c2"><rect x="252" y="252" width="54" height="54" rx="9"/><rect class="gloss" x="259" y="258" width="40" height="8" rx="4"/></g>
+      <g class="blk c6"><rect x="372" y="252" width="54" height="54" rx="9"/><rect class="gloss" x="379" y="258" width="40" height="8" rx="4"/></g>
+      <g class="blk c6"><rect x="432" y="252" width="54" height="54" rx="9"/><rect class="gloss" x="439" y="258" width="40" height="8" rx="4"/></g>
+      <g class="blk c3 clear"><rect x="12" y="312" width="54" height="54" rx="9"/><rect class="gloss" x="19" y="318" width="40" height="8" rx="4"/></g>
+      <g class="blk c0 clear"><rect x="72" y="312" width="54" height="54" rx="9"/><rect class="gloss" x="79" y="318" width="40" height="8" rx="4"/></g>
+      <g class="blk c0 clear"><rect x="132" y="312" width="54" height="54" rx="9"/><rect class="gloss" x="139" y="318" width="40" height="8" rx="4"/></g>
+      <g class="blk c4 clear"><rect x="312" y="312" width="54" height="54" rx="9"/><rect class="gloss" x="319" y="318" width="40" height="8" rx="4"/></g>
+      <g class="blk c4 clear"><rect x="372" y="312" width="54" height="54" rx="9"/><rect class="gloss" x="379" y="318" width="40" height="8" rx="4"/></g>
+      <g class="blk c0 clear"><rect x="432" y="312" width="54" height="54" rx="9"/><rect class="gloss" x="439" y="318" width="40" height="8" rx="4"/></g>
+      <g class="blk c3"><rect x="12" y="372" width="54" height="54" rx="9"/><rect class="gloss" x="19" y="378" width="40" height="8" rx="4"/></g>
+      <g class="blk c7"><rect x="132" y="372" width="54" height="54" rx="9"/><rect class="gloss" x="139" y="378" width="40" height="8" rx="4"/></g>
+      <g class="blk c4"><rect x="312" y="372" width="54" height="54" rx="9"/><rect class="gloss" x="319" y="378" width="40" height="8" rx="4"/></g>
+      <g class="blk c4"><rect x="372" y="372" width="54" height="54" rx="9"/><rect class="gloss" x="379" y="378" width="40" height="8" rx="4"/></g>
+      <g class="blk c7"><rect x="12" y="432" width="54" height="54" rx="9"/><rect class="gloss" x="19" y="438" width="40" height="8" rx="4"/></g>
+      <g class="blk c7"><rect x="72" y="432" width="54" height="54" rx="9"/><rect class="gloss" x="79" y="438" width="40" height="8" rx="4"/></g>
+      <g class="blk c7"><rect x="132" y="432" width="54" height="54" rx="9"/><rect class="gloss" x="139" y="438" width="40" height="8" rx="4"/></g>
+      <g class="blk c0"><rect x="252" y="432" width="54" height="54" rx="9"/><rect class="gloss" x="259" y="438" width="40" height="8" rx="4"/></g>
+      <g class="blk c2"><rect x="432" y="432" width="54" height="54" rx="9"/><rect class="gloss" x="439" y="438" width="40" height="8" rx="4"/></g>
+      <g class="drop"><g class="blk c1 clear"><rect x="192" y="312" width="54" height="54" rx="9"/><rect class="gloss" x="199" y="318" width="40" height="8" rx="4"/><rect x="252" y="312" width="54" height="54" rx="9"/><rect class="gloss" x="259" y="318" width="40" height="8" rx="4"/></g></g>
+      <rect class="flash" x="8" y="308" width="482" height="62" rx="12"/>
+    </svg>
+    <div class="hero__copy">
+      <h1 class="hero__title">Gridlit</h1>
+      <p class="hero__line">Drop a block. Fill a line. Watch it light up and clear.</p>
+      <p class="hero__meta"><span class="soon">Coming soon to Google Play</span> Block puzzle for Android</p>
+    </div>
+  </section>
+
+  <section class="wrap block play">
+    <div>
+      <h2 class="block__title">How it plays</h2>
+      <ol class="steps">
+        <li><h3>Drag</h3><p>You get three blocks at a time. Drag each one onto the 8×8 board, anywhere it fits.</p></li>
+        <li><h3>Fill</h3><p>Complete a row or a column and it lights up and clears, making room for more.</p></li>
+        <li><h3>Plan</h3><p>There is no timer. The round ends only when none of your blocks fits anywhere.</p></li>
+      </ol>
+      <p class="play__more">Clear several lines with one block, or keep clearing move after move, and the combo multiplies your score. Empty the whole board for a big bonus.</p>
+    </div>
+    <figure class="shot"><img src="img/shots/2-combo.jpg" alt="A combo: several lines clearing at once on the board" width="540" height="960" loading="lazy"><figcaption>Combo</figcaption></figure>
+  </section>
+
+  <section class="block">
+    <div class="wrap"><h2 class="block__title">A look inside</h2></div>
+    <div class="strip" tabindex="0" role="group" aria-label="Screenshots">
+    <figure class="shot"><img src="img/shots/1-gameplay.jpg" alt="Dragging a block over the board, with the lines it will clear highlighted" width="540" height="960" loading="lazy"><figcaption>Gameplay</figcaption></figure>
+    <figure class="shot"><img src="img/shots/3-game-over.jpg" alt="Game over screen with a new best score" width="540" height="960" loading="lazy"><figcaption>Game over</figcaption></figure>
+    <figure class="shot"><img src="img/shots/4-themes.jpg" alt="Theme shop with block styles" width="540" height="960" loading="lazy"><figcaption>Themes</figcaption></figure>
+    <figure class="shot"><img src="img/shots/5-boosters.jpg" alt="Boosters: hammer, new blocks and undo" width="540" height="960" loading="lazy"><figcaption>Boosters</figcaption></figure>
+    <figure class="shot"><img src="img/shots/6-missions.jpg" alt="Three active missions with progress" width="540" height="960" loading="lazy"><figcaption>Missions</figcaption></figure>
+    <figure class="shot"><img src="img/shots/7-menu.jpg" alt="Main menu with Play and Daily Challenge buttons" width="540" height="960" loading="lazy"><figcaption>Menu</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="wrap block">
+    <h2 class="block__title">What’s in it</h2>
+    <dl class="facts">
+      <div><dt>Daily challenge</dt><dd>The same blocks for everyone each day, with a score to beat. Beat it on consecutive days to build a streak.</dd></div>
+      <div><dt>Missions</dt><dd>Three at a time. Finish one and a harder one takes its place.</dd></div>
+      <div><dt>Boosters</dt><dd>A hammer, a fresh set of blocks and undo, for when you are stuck.</dd></div>
+      <div><dt>Eight themes</dt><dd>Neon, candy, pastel, ocean, sunset, gold and more, paid for with coins from clearing lines.</dd></div>
+      <div><dt>Colour-blind friendly</dt><dd>Optional symbols on every block colour.</dd></div>
+      <div><dt>No connection needed</dt><dd>The game runs offline, has no accounts and saves your round when you leave.</dd></div>
+    </dl>
+    <p class="ads"><strong>Free, with ads.</strong> A full-screen ad can appear between rounds, never during one. Other ads play only when you choose to watch one for a reward. A single purchase removes the full-screen ads.</p>
+  </section>
+</main>
+
+<footer class="wrap foot">
+  <p><a href="privacy-policy.html">Privacy policy</a> · <a href="mailto:contact@codehappens.dev">contact@codehappens.dev</a></p>
+  <p>© 2026 <a href="https://codehappens.dev/">Code Happens</a></p>
+</footer>
+
+</body>
+</html>
