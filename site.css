@@ -61,7 +61,6 @@ body::before {
 .scene .clear { animation: clear var(--loop) ease-out infinite; transform-box: fill-box; transform-origin: center; }
 .scene .drop { animation: drop var(--loop) cubic-bezier(0.3, 0, 0.2, 1) infinite; }
 .scene .flash { fill: var(--color-ink); opacity: 0; animation: flash var(--loop) ease-out infinite; }
-.soon { display: inline-block; padding: 0.7rem 1.4rem; border-radius: 999px; border: 2px solid var(--color-cyan); color: var(--color-cyan); font-weight: 700; white-space: nowrap; }
 
 /* ---------- How it plays ---------- */
 
